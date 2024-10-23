@@ -4,6 +4,7 @@ import cors from "cors";
 import "dotenv/config";
 import { fileURLToPath } from "url";
 import foodRoute from "./routes/food.js";
+import orderRoute from "./routes/order.js";
 
 const app = express();
 
@@ -24,6 +25,8 @@ console.log(ImagePath);
 app.use("/images", express.static(ImagePath));
 
 app.use("/api/food", foodRoute);
+
+app.use("/api/order", orderRoute);
 
 app.listen(PORT, () => {
   console.log(`Listening from ${BACKEND_URL}:${PORT}`);

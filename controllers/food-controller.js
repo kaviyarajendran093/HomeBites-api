@@ -1,7 +1,6 @@
 import initKnex from "knex";
 import configuration from "../knexfile.js";
 const knex = initKnex(configuration);
-import { body, validationResult } from "express-validator";
 
 const getAllCategory = async (req, res) => {
   try {
