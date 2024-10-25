@@ -47,25 +47,10 @@ const getChefByCuisineAndCategory = async (req, res) => {
   }
 };
 
-// const data = await knex("food as f")
-// .select(
-//   "f.food_id",
-//   "f.name",
-//   "f.description",
-//   "f.image_url",
-//   "f.rating",
-//   "f.price",
-//   "c.category"
-// )
-// .join("category_master as c", "f.category_id", "c.category_id") // Joining with category_master
-// .where("f.chef_id", chefId) // Filtering by chef_id
-// .orderBy("c.category");
-
 const getfoodByChefAndCategory = async (req, res) => {
   try {
     const categoryId = req.params.category_id;
     const chefId = req.params.chef_id;
-    console.log("chefId : ", req.params.chef_id);
 
     const data = await knex("food as f")
       .select(
@@ -86,10 +71,6 @@ const getfoodByChefAndCategory = async (req, res) => {
   } catch (error) {
     res.status(500).send("Error retrieving food list");
   }
-};
-
-const gettest = () => {
-  console.log("testing");
 };
 
 const getfoodByChef = async (req, res) => {
@@ -121,5 +102,4 @@ export {
   getChefByCuisineAndCategory,
   getfoodByChef,
   getfoodByChefAndCategory,
-  gettest,
 };
