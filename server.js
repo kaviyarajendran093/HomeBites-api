@@ -5,6 +5,7 @@ import "dotenv/config";
 import { fileURLToPath } from "url";
 import foodRoute from "./routes/food.js";
 import orderRoute from "./routes/order.js";
+import cartRoute from "./routes/cart.js";
 
 const app = express();
 
@@ -27,6 +28,8 @@ app.use("/images", express.static(ImagePath));
 app.use("/api/food", foodRoute);
 
 app.use("/api/order", orderRoute);
+
+app.use("/api/cart", cartRoute);
 
 app.listen(PORT, () => {
   console.log(`Listening from ${BACKEND_URL}:${PORT}`);
