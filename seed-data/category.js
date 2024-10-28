@@ -6,7 +6,7 @@ export default [
   },
   {
     category_id: 102,
-    category: "Main CourseMain Course",
+    category: "Main Course",
     image_url: "Main_Course.jpg", // Replace with actual image URL
   },
   {

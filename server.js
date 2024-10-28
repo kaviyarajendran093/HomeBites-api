@@ -6,6 +6,7 @@ import { fileURLToPath } from "url";
 import foodRoute from "./routes/food.js";
 import orderRoute from "./routes/order.js";
 import cartRoute from "./routes/cart.js";
+import trackOrderRoute from "./routes/trackOrder.js";
 
 const app = express();
 
@@ -30,6 +31,8 @@ app.use("/api/food", foodRoute);
 app.use("/api/order", orderRoute);
 
 app.use("/api/cart", cartRoute);
+
+app.use("/api/trackOrder", trackOrderRoute);
 
 app.listen(PORT, () => {
   console.log(`Listening from ${BACKEND_URL}:${PORT}`);

@@ -17,6 +17,7 @@ export function up(knex) {
       table.increments("cuisine_id").primary();
       table.string("cuisine_name").notNullable();
       table.string("image_url");
+      table.text("description", 500);
       table.timestamp("created_at").defaultTo(knex.fn.now());
       table
         .timestamp("updated_at")
@@ -33,6 +34,7 @@ export function up(knex) {
       table.string("x_url");
       table.string("phone_no", 20);
       table.boolean("topchef").defaultTo(false);
+      table.string("available_time", 255);
       table.decimal("rating", 10, 2).notNullable();
       table
         .integer("cuisine_id")
@@ -119,6 +121,8 @@ export function up(knex) {
         .defaultTo("Pending")
         .notNullable();
       table.boolean("payment").defaultTo(false).notNullable();
+      table.string("payment_metod", 20);
+      table.boolean("promocode").defaultTo(false).notNullable();
       table.timestamp("created_at").defaultTo(knex.fn.now());
       table
         .timestamp("updated_at")
@@ -174,6 +178,7 @@ export function up(knex) {
         .onDelete("CASCADE");
       table.string("first_name", 255).notNullable();
       table.string("last_name", 255);
+      table.string("email", 50).notNullable();
       table.string("phone_no", 20);
       table.string("street", 255);
       table.string("city", 100);

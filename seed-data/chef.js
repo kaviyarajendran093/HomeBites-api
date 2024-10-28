@@ -11,6 +11,7 @@ export default [
     phone_no: "123-456-7890",
     cuisine_id: 201, // Indian cuisine_id
     image_url: "ravi_kumar.jpg",
+    available_time: "10:00 AM - 8:00 PM",
     rating: 4,
     topchef: false, // Example value for topchef
   },
@@ -25,6 +26,7 @@ export default [
     phone_no: "234-567-8901",
     cuisine_id: 201, // Indian cuisine_id
     image_url: "priya_sharma.jpg",
+    available_time: "1:00 AM - 11:00 PM",
     rating: 5,
     topchef: true,
   },
@@ -41,6 +43,7 @@ export default [
     phone_no: "345-678-9012",
     cuisine_id: 202, // Mexican cuisine_id
     image_url: "carlos_mendoza.jpg",
+    available_time: "2:00 AM - 10:00 PM",
     rating: 4,
     topchef: false,
   },
@@ -55,6 +58,7 @@ export default [
     phone_no: "456-789-0123",
     cuisine_id: 202, // Mexican cuisine_id
     image_url: "sofia_torres.jpg",
+    available_time: "4:00 AM - 9:00 PM",
     rating: 5,
     topchef: true,
   },
@@ -71,6 +75,7 @@ export default [
     phone_no: "567-890-1234",
     cuisine_id: 203, // Chinese cuisine_id
     image_url: "li_wei.jpg",
+    available_time: "10:00 AM - 8:00 PM",
     rating: 3,
     topchef: false,
   },
@@ -85,6 +90,7 @@ export default [
     phone_no: "678-901-2345",
     cuisine_id: 203, // Chinese cuisine_id
     image_url: "mei_chen.jpg",
+    available_time: "12:00 AM - 6:00 PM",
     rating: 4,
     topchef: false,
   },
@@ -101,6 +107,7 @@ export default [
     phone_no: "789-012-3456",
     cuisine_id: 204, // Italian cuisine_id
     image_url: "giovanni_rossi.jpg",
+    available_time: "10:00 AM - 8:00 PM",
     rating: 5,
     topchef: true,
   },
@@ -115,6 +122,7 @@ export default [
     phone_no: "890-123-4567",
     cuisine_id: 204, // Italian cuisine_id
     image_url: "alessia_bianchi.jpg",
+    available_time: "6:00 AM - 6:00 PM",
     rating: 4,
     topchef: false,
   },
@@ -131,6 +139,7 @@ export default [
     phone_no: "901-234-5678",
     cuisine_id: 205, // Korean cuisine_id
     image_url: "min_jun_park.jpg",
+    available_time: "10:00 AM - 8:00 PM",
     rating: 5,
     topchef: true,
   },
@@ -145,6 +154,7 @@ export default [
     phone_no: "012-345-6789",
     cuisine_id: 205, // Korean cuisine_id
     image_url: "seo_yeon_kim.jpg",
+    available_time: "8:00 AM - 8:00 PM",
     rating: 4,
     topchef: false,
   },
