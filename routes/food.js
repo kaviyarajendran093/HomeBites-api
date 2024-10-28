@@ -3,11 +3,14 @@ import {
   getAllCategory,
   getAllCuisine,
   getCuisineByCategoryId,
+  getTopChefs,
 } from "../controllers/food-controller.js";
 
 const foodRoute = express.Router();
 
 foodRoute.route("/").get(getAllCategory);
+
+foodRoute.route("/topchef").get(getTopChefs);
 
 foodRoute.route("/cuisine").get(getAllCuisine);
 

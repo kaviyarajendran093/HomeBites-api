@@ -10,6 +10,7 @@ const validateOrder = [
   body("total_amount").exists().withMessage("total amount is required."),
   body("status").exists().withMessage("status is required."),
   body("payment").exists().withMessage("payment is required."),
+  body("promocode").exists().withMessage("promocode is required."),
 ];
 
 const validateInvoice = [
@@ -79,7 +80,7 @@ const addInvoice = async (req, res) => {
     if (!newInvoice) {
       return res
         .status(404)
-        .json({ message: "Invoice not found after creation" });
+        .json({ message: "Invoice id not found after creation" });
     }
 
     const { created_at, updated_at, ...responseJson } = newInvoice;

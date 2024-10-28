@@ -8,7 +8,9 @@ export default [
     total_items: 3,
     total_amount: 35.75,
     status: "Delivered",
-    payment: true, // TRUE for paid
+    payment: true,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 602,
@@ -16,7 +18,9 @@ export default [
     total_items: 5,
     total_amount: 50.0,
     status: "Pending",
-    payment: false, // FALSE for not paid
+    payment: false,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 603,
@@ -25,6 +29,8 @@ export default [
     total_amount: 20.5,
     status: "Cancelled",
     payment: true,
+    payment_metod: "creditDebit",
+    promocode: false,
   },
 
   // Orders for User 2 (user_id: 402)
@@ -35,6 +41,8 @@ export default [
     total_amount: 45.25,
     status: "Shipped",
     payment: true,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 605,
@@ -43,6 +51,8 @@ export default [
     total_amount: 15.0,
     status: "Pending",
     payment: false,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 606,
@@ -51,6 +61,8 @@ export default [
     total_amount: 70.0,
     status: "Delivered",
     payment: true,
+    payment_metod: "creditDebit",
+    promocode: false,
   },
 
   // Orders for User 3 (user_id: 403)
@@ -61,6 +73,8 @@ export default [
     total_amount: 22.0,
     status: "Processing",
     payment: false,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 608,
@@ -69,6 +83,8 @@ export default [
     total_amount: 30.0,
     status: "Delivered",
     payment: true,
+    payment_metod: "cash",
+    promocode: false,
   },
 
   // Orders for User 4 (user_id: 404)
@@ -79,6 +95,8 @@ export default [
     total_amount: 55.0,
     status: "Pending",
     payment: false,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 610,
@@ -87,6 +105,8 @@ export default [
     total_amount: 18.0,
     status: "Cancelled",
     payment: true,
+    payment_metod: "cash",
+    promocode: false,
   },
 
   // Orders for User 5 (user_id: 405)
@@ -97,6 +117,8 @@ export default [
     total_amount: 40.5,
     status: "Shipped",
     payment: true,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 612,
@@ -105,6 +127,8 @@ export default [
     total_amount: 10.0,
     status: "Pending",
     payment: false,
+    payment_metod: "cash",
+    promocode: false,
   },
 
   // Orders for User 6 (user_id: 406)
@@ -115,6 +139,8 @@ export default [
     total_amount: 75.0,
     status: "Delivered",
     payment: true,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 614,
@@ -123,6 +149,8 @@ export default [
     total_amount: 33.5,
     status: "Pending",
     payment: false,
+    payment_metod: "cash",
+    promocode: false,
   },
 
   // Orders for User 7 (user_id: 407)
@@ -133,6 +161,8 @@ export default [
     total_amount: 24.0,
     status: "Processing",
     payment: true,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 616,
@@ -141,6 +171,8 @@ export default [
     total_amount: 55.25,
     status: "Cancelled",
     payment: false,
+    payment_metod: "cash",
+    promocode: false,
   },
 
   // Orders for User 8 (user_id: 408)
@@ -151,6 +183,8 @@ export default [
     total_amount: 15.75,
     status: "Shipped",
     payment: true,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 618,
@@ -159,6 +193,8 @@ export default [
     total_amount: 42.5,
     status: "Pending",
     payment: false,
+    payment_metod: "cash",
+    promocode: false,
   },
 
   // Orders for User 9 (user_id: 409)
@@ -169,6 +205,8 @@ export default [
     total_amount: 70.0,
     status: "Delivered",
     payment: true,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 620,
@@ -177,6 +215,8 @@ export default [
     total_amount: 20.0,
     status: "Cancelled",
     payment: false,
+    payment_metod: "cash",
+    promocode: false,
   },
 
   // Orders for User 10 (user_id: 410)
@@ -187,6 +227,8 @@ export default [
     total_amount: 30.0,
     status: "Processing",
     payment: true,
+    payment_metod: "cash",
+    promocode: false,
   },
   {
     order_id: 622,
@@ -195,5 +237,7 @@ export default [
     total_amount: 50.0,
     status: "Pending",
     payment: false,
+    payment_metod: "cash",
+    promocode: false,
   },
 ];

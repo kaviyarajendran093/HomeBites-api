@@ -2,6 +2,19 @@ import initKnex from "knex";
 import configuration from "../knexfile.js";
 const knex = initKnex(configuration);
 
+const getTopChefs = async (req, res) => {
+  try {
+    const data = await knex("chef").where("topchef", 1);
+    const responseJson = data.map((value) => {
+      const { created_at, updated_at, ...rest } = value;
+      return rest;
+    });
+    res.status(200).json(responseJson);
+  } catch (error) {
+    res.status(500).send("Error retrieving top chefs");
+  }
+};
+
 const getAllCategory = async (req, res) => {
   try {
     const data = await knex("category_master");
@@ -48,4 +61,4 @@ const getCuisineByCategoryId = async (req, res) => {
   }
 };
 
-export { getAllCategory, getAllCuisine, getCuisineByCategoryId };
+export { getAllCategory, getAllCuisine, getCuisineByCategoryId, getTopChefs };
