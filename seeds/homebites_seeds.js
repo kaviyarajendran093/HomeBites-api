@@ -15,7 +15,7 @@ export async function seed(knex) {
   await knex("food").del();
   await knex("order").del();
   await knex("invoice").del();
-  await knex("deliveryInfo").del();
+  await knex("deliveryinfo").del();
   await knex("category_master").insert(category_master);
   await knex("cuisine_master").insert(cuisine_master);
   await knex("chef").insert(chef);
@@ -23,5 +23,5 @@ export async function seed(knex) {
   await knex("food").insert(food);
   await knex("order").insert(order);
   await knex("invoice").insert(invoice);
-  await knex("deliveryInfo").insert(deliveryInfo);
+  await knex("deliveryinfo").insert(deliveryInfo);
 }
