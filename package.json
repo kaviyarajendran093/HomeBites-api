@@ -8,7 +8,8 @@
     "migrate:down": "knex migrate:down",
     "migrate:rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
-    "server": "node --watch server.js"
+    "server": "node --watch server.js",
+    "dev": "nodemon --watch server.js server.js"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
     "google-auth-library": "^10.5.0",
     "jsonwebtoken": "^9.0.3",
     "knex": "^3.1.0",
-    "mysql2": "^3.11.3"
+    "mysql2": "^3.11.3",
+    "nodemon": "^3.1.11"
   }
 }
